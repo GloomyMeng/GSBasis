@@ -21,7 +21,10 @@
     "osx": "10.12",
     "tvos": "10.0"
   },
-  "default_subspecs": "Common",
+  "default_subspecs": [
+    "Common",
+    "UIKit"
+  ],
   "source_files": "GSBasis/Classes/**/*",
   "subspecs": [
     {
@@ -32,6 +35,10 @@
 
         ]
       }
+    },
+    {
+      "name": "UIKit",
+      "source_files": "GSBasis/UIKit/**/*"
     }
   ]
 }

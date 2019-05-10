@@ -1,8 +1,10 @@
 PODS:
   - GSBasis (0.1.0):
     - GSBasis/Common (= 0.1.0)
+    - GSBasis/UIKit (= 0.1.0)
   - GSBasis/Common (0.1.0):
     - Then
+  - GSBasis/UIKit (0.1.0)
   - Then (2.4.0)
 
 DEPENDENCIES:
@@ -17,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GSBasis: aeaa267129f527c6ed1e0744361fdbda10f52a09
+  GSBasis: d28b574c95193b0a455596c0e663914b02ef62d9
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
 PODFILE CHECKSUM: ffcf25033dd0e9b549abd78577a5df61a07ce438

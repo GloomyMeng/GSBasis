@@ -39,9 +39,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let c = Localize.availableLanguages();
+        
         UserStatusNotifier.login.addObserver(self, object: nil) { (controller, _) in
-            
+
         }
+        
+        UITableView.init().register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellReuseIdentifier: <#T##String#>)
 //        let c = "2333".gs.value()
         // Do any additional setup after loading the view, typically from a nib.
     }
