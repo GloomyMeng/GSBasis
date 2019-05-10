@@ -81,7 +81,7 @@ public protocol NotifierType {
     var prefix: String { get }
 }
 
-public extension NotifierType { var prefix: String { return Bundle.main.bundleIdentifier ?? "" } }
+public extension NotifierType { var prefix: String { return Bundle.identifier } }
 
 extension RawRepresentable where Self: NotifierType, Self.RawValue == String {
     

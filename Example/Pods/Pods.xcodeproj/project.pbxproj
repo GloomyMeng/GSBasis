@@ -24,6 +24,9 @@
 		D469202DE813F58D52F5289E1B1D252B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC59FD43CB200CCD8EF9D181EDAC361B /* Foundation.framework */; };
 		E3BA7264EE3174CAEE260F652CB1515D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507D845D8D3291F2DA96BFB997FAC68D /* Logger.swift */; };
 		F066D091667FA007942B2F39E4264282 /* Then-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA07557F6947A919F09FB739E98EAF9 /* Then-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5552D9D22856C8400F890E6 /* GSDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5552D9C22856C8400F890E6 /* GSDefaults.swift */; };
+		F5552D9F22856CEC00F890E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5552D9E22856CEC00F890E6 /* Extensions.swift */; };
+		F5552DA122856E9800F890E6 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5552DA022856E9800F890E6 /* Time.swift */; };
 		FAC0EF5F95D53F164B6F0CB482BE73C6 /* Pods-GSBasis_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC7392EE9A3B94CBCE404C394E58000A /* Pods-GSBasis_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -100,6 +103,9 @@
 		EE6AC16360A951A30EA58F424F030FBD /* Pods-GSBasis_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSBasis_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F025A141B7FC4B60761449FE81C7C47E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F252048E82117ADCDC0CE02D893441D2 /* Pods-GSBasis_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSBasis_Example-dummy.m"; sourceTree = "<group>"; };
+		F5552D9C22856C8400F890E6 /* GSDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GSDefaults.swift; path = GSBasis/Classes/GSDefaults.swift; sourceTree = "<group>"; };
+		F5552D9E22856CEC00F890E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = GSBasis/Classes/Extensions.swift; sourceTree = "<group>"; };
+		F5552DA022856E9800F890E6 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Time.swift; path = GSBasis/Classes/Time.swift; sourceTree = "<group>"; };
 		F9B9904886E22B83F1F9FAA468BF5E5D /* Then.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Then.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7392EE9A3B94CBCE404C394E58000A /* Pods-GSBasis_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSBasis_Example-umbrella.h"; sourceTree = "<group>"; };
 		FFA12EB52DE724ADB5B119CF170D8B71 /* GSBasis.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSBasis.xcconfig; sourceTree = "<group>"; };
@@ -283,8 +289,11 @@
 				7DF0D3B93DFF1FFBE73E827A2FB840C8 /* Error.swift */,
 				507D845D8D3291F2DA96BFB997FAC68D /* Logger.swift */,
 				BD2F17C75A7F2EBC87B457572CCCD2E5 /* Notifier.swift */,
+				F5552D9C22856C8400F890E6 /* GSDefaults.swift */,
+				F5552DA022856E9800F890E6 /* Time.swift */,
 				35703C20A56AA416EB5519B3A877A652 /* Pod */,
 				08B48E12DCB9843F6C07641EBB7CEA00 /* Support Files */,
+				F5552D9E22856CEC00F890E6 /* Extensions.swift */,
 			);
 			name = GSBasis;
 			path = ../..;
@@ -502,7 +511,10 @@
 				4266ABBC97FA87CF570169685D31CC6F /* Error.swift in Sources */,
 				CF58DE621392199D1500F27F60DE11CF /* GSBasis-dummy.m in Sources */,
 				E3BA7264EE3174CAEE260F652CB1515D /* Logger.swift in Sources */,
+				F5552DA122856E9800F890E6 /* Time.swift in Sources */,
 				5D014D297116DD829D08F351F43E6CA1 /* Notifier.swift in Sources */,
+				F5552D9D22856C8400F890E6 /* GSDefaults.swift in Sources */,
+				F5552D9F22856CEC00F890E6 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
