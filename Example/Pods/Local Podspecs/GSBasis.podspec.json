@@ -1,7 +1,7 @@
 {
   "name": "GSBasis",
   "version": "0.1.0",
-  "summary": "A short description of GSBasis.",
+  "summary": "Basic components of the GS series components",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/gloomy.meng.049@gmail.com/GSBasis",
   "license": {
@@ -15,8 +15,16 @@
     "git": "https://github.com/gloomy.meng.049@gmail.com/GSBasis.git",
     "tag": "0.1.0"
   },
+  "swift_version": "5.0",
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "GSBasis/Classes/**/*"
+  "default_subspecs": "Common",
+  "source_files": "GSBasis/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "Common",
+      "source_files": "GSBasis/Classes/**/*"
+    }
+  ]
 }
