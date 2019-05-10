@@ -1,0 +1,16 @@
+PODS:
+  - GSBasis (0.1.0)
+
+DEPENDENCIES:
+  - GSBasis (from `../`)
+
+EXTERNAL SOURCES:
+  GSBasis:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GSBasis: 4ab3f1764041e664dd474c9995781c977cdf58b3
+
+PODFILE CHECKSUM: ffcf25033dd0e9b549abd78577a5df61a07ce438
+
+COCOAPODS: 1.6.1

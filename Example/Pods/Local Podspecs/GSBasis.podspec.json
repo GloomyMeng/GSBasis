@@ -1,0 +1,22 @@
+{
+  "name": "GSBasis",
+  "version": "0.1.0",
+  "summary": "A short description of GSBasis.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/gloomy.meng.049@gmail.com/GSBasis",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gloomy.meng.049@gmail.com": "gloomy.meng.049@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/gloomy.meng.049@gmail.com/GSBasis.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GSBasis/Classes/**/*"
+}
