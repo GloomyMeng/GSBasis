@@ -35,6 +35,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'GSBasis/Classes/**/*'
   
   s.subspec 'Common' do |ss|
-      ss.source_files = 'GSBasis/Classes/Common/**/*'
+      ss.source_files = 'GSBasis/Classes/**/*'
+      ss.dependency 'Then'
   end
 end

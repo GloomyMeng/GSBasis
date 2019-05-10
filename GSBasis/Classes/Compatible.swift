@@ -11,7 +11,7 @@ extension Compatible {
     public var gs: GS<Self> { get { return GS(self) } }
 }
 
-/// extension Use 'GS' to manager instance methods
+/// Extension Use 'GS' to manager instance methods
 /// For example:
 ///
 ///     extension String: Compatible {}
@@ -37,3 +37,5 @@ public final class GS<Base> {
         self.base = base
     }
 }
+
+

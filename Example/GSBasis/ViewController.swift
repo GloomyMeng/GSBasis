@@ -9,6 +9,26 @@
 import UIKit
 import GSBasis
 
+
+
+
+enum UserStatusNotifier: String, NotifierType {
+    
+    case login
+    case logout
+}
+
+//class ViewController: UIViewController {
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        UserStatusNotifier.login.addObserver(self, object: nil) { (controller, notification) in
+//            controller?.view
+//        }
+//    }
+//}
+
+
 //extension String: Compatible { }
 //extension GS where Base == String {
 //
@@ -19,6 +39,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserStatusNotifier.login.addObserver(self, object: nil) { (controller, _) in
+            
+        }
 //        let c = "2333".gs.value()
         // Do any additional setup after loading the view, typically from a nib.
     }
