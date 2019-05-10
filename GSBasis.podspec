@@ -29,10 +29,12 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_version = '5.0'
   s.ios.deployment_target = '10.0'
+  s.osx.deployment_target = '10.12'
+  s.tvos.deployment_target = '10.0'
   s.default_subspecs = 'Common'
   s.source_files = 'GSBasis/Classes/**/*'
   
   s.subspec 'Common' do |ss|
-      ss.source_files = 'GSBasis/Classes/**/*'
+      ss.source_files = 'GSBasis/Classes/Common/**/*'
   end
 end

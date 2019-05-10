@@ -7,11 +7,19 @@
 //
 
 import UIKit
+import GSBasis
+
+//extension String: Compatible { }
+//extension GS where Base == String {
+//
+//    func value() -> Double { return 2 }
+//}
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let c = "2333".gs.value()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
