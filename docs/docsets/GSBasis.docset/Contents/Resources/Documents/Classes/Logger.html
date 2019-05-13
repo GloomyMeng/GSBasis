@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Logger Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Logger" class="dashAnchor"></a>
+    <a title="Logger Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">GSBasis Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/orgs/Sky-And-Hammer"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">GSBasis Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Logger Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/GS.html">GS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Day.html">Day</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Hour.html">Hour</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Microsecond.html">Microsecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Millsecond.html">Millsecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Minute.html">Minute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Nanosecond.html">Nanosecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Second.html">Second</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/RawRepresentable.html">RawRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:7GSBasis12_fatailError_5valuexSS_xyKXKtKlF">_fatailError(_:value:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:7GSBasis5printyyypd_tF">print(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Compatible.html">Compatible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorReason.html">ErrorReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:7GSBasis7GSErrorP">GSError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LogGenerator.html">LogGenerator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Loggerable.html">Loggerable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NotifierType.html">NotifierType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TimeUnit.html">TimeUnit</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/GSDefaults.html">GSDefaults</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSDefaultsKey.html">GSDefaultsKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Interval.html">Interval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Localize.html">Localize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Localize/LocalizeNotifier.html">– LocalizeNotifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogEntity.html">LogEntity</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Logger</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Logger</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/LogGenerator.html">LogGenerator</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A share instance for gengrate log infos</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC8showDateSbvp"></a>
+                    <a name="//apple_ref/swift/Property/showDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC8showDateSbvp">showDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show log date or not</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">showDate</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC12showFileInfoSbvp"></a>
+                    <a name="//apple_ref/swift/Property/showFileInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC12showFileInfoSbvp">showFileInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show log fileInfo or not</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">showFileInfo</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC13dateFormatterSo06NSDateD0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/dateFormatter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC13dateFormatterSo06NSDateD0Cvp">dateFormatter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log date formatter, &lsquo;yyyy-MM-dd HH:mm:ss&rsquo; by defualt</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">dateFormatter</span><span class="p">:</span> <span class="kt">DateFormatter</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC12storeClosureyAA9LogEntityVcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/storeClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC12storeClosureyAA9LogEntityVcSgvp">storeClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A closure for store log if you need, will call in Logger.share.queue
+SEE &lsquo;GSLogger&rsquo;</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">storeClosure</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Structs/LogEntity.html">LogEntity</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC6enableSbvp"></a>
+                    <a name="//apple_ref/swift/Property/enable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC6enableSbvp">enable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">enable</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC5levelAA8LogLevelOvp"></a>
+                    <a name="//apple_ref/swift/Property/level" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC5levelAA8LogLevelOvp">level</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Enums/LogLevel.html">LogLevel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC5shareACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/share" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC5shareACvpZ">share</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">share</span><span class="p">:</span> <span class="kt">Logger</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC7verbose_4file8function4lineyAA10Loggerable_pd_S2SSitFZ"></a>
+                    <a name="//apple_ref/swift/Method/verbose(_:file:function:line:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC7verbose_4file8function4lineyAA10Loggerable_pd_S2SSitFZ">verbose(_:file:function:line:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Console a verbose level log</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">verbose</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Loggerable.html">Loggerable</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC4info_4file8function4lineyAA10Loggerable_pd_S2SSitFZ"></a>
+                    <a name="//apple_ref/swift/Method/info(_:file:function:line:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC4info_4file8function4lineyAA10Loggerable_pd_S2SSitFZ">info(_:file:function:line:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Console a info level log</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">info</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Loggerable.html">Loggerable</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC7warning_4file8function4lineyAA10Loggerable_pd_S2SSitFZ"></a>
+                    <a name="//apple_ref/swift/Method/warning(_:file:function:line:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC7warning_4file8function4lineyAA10Loggerable_pd_S2SSitFZ">warning(_:file:function:line:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Console a warning level log</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">warning</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Loggerable.html">Loggerable</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis6LoggerC5error_4file8function4lineyAA10Loggerable_pd_S2SSitFZ"></a>
+                    <a name="//apple_ref/swift/Method/error(_:file:function:line:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis6LoggerC5error_4file8function4lineyAA10Loggerable_pd_S2SSitFZ">error(_:file:function:line:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Console a error level log</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">error</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Loggerable.html">Loggerable</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kd">#function</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/GloomySunday049" target="_blank" rel="external">Gloomy.Sunday</a>. All rights reserved. (Last updated: 2019-05-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
