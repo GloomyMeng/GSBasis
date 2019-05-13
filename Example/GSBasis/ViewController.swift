@@ -45,7 +45,7 @@ class ViewController: UIViewController {
 
         }
         
-        UITableView.init().register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellReuseIdentifier: <#T##String#>)
+//        UITableView.init().register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellReuseIdentifier: <#T##String#>)
 //        let c = "2333".gs.value()
         // Do any additional setup after loading the view, typically from a nib.
     }

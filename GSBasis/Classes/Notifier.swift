@@ -74,6 +74,9 @@ private func GS_observationRemoversForObject(_ object: AnyObject) -> NSMutableAr
 ///         .....
 ///     }
 ///
+/// And if need post notification, you can like this
+///
+///
 /// - Doesn't need to 'removeObserver'.
 /// - Default prefix is 'Bundle.main.bundleIdentifier'
 ///
@@ -83,11 +86,32 @@ public protocol NotifierType {
 
 public extension NotifierType { var prefix: String { return Bundle.identifier } }
 
+
 extension RawRepresentable where Self: NotifierType, Self.RawValue == String {
     
     var notificationName: Notification.Name { return Notification.Name.init(self.prefix + self.rawValue) }
     
+    /// Convenience for 'addObserver(forName:object:queue:using:)'
+    ///
+    /// Use to add observer for a Notification.Name callback by a closure and doesn't need to run 'removeObserver(_:)' when deinit
+    ///
+    /// - Parameters:
+    ///   - observer: the receiver of notification. in closure, observer is weak reference
+    ///   - anObject: the object whose notifications the observer wants to receive; that is, only notifications sent by this sender are delivered to the observer.
+    ///   - queue: the operation queue to which block should be added. If you pass nil, the block is run synchronously on the posting thread.
+    ///   - handler: The block to be executed when the notification is received. The block is copied by the notification center and (the copy) held until the observer registration is removed
+    /// - Returns: the object which is 'true' observer for NotificationCenter
     public func addObserver<T: AnyObject>(_ observer: T, queue: OperationQueue? = OperationQueue.main, object obj: AnyObject?, handler: @escaping (_ observer: T?, _ notification: Notification) -> Void) {
         NotificationCenter.default.gs.addObserver(observer, name: notificationName, object: obj, queue: queue, handler: handler)
+    }
+    
+    
+    /// Creates a notification with a given name, sender, and information and posts it to the notification center.
+    ///
+    /// - Parameters:
+    ///   - object: The object posting the notification.
+    ///   - userInfo: Optional information about the the notification.
+    public func push(object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) {
+        NotificationCenter.default.post(name: notificationName, object: object, userInfo: userInfo)
     }
 }

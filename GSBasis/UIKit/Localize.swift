@@ -9,9 +9,14 @@ import Foundation
 
 public struct Localize {
     
+    public enum LocalizeNotifier: String, NotifierType {
+        //
+        case currentChanged
+    }
+    
     /// Default language. English. If English is unavailable defaults to base localization.
     public static var DefaultLanguage = "en"
-    private static var storeCurrentKey = GSDefaultsKey<String>("GSBasis")
+    private static var storeCurrentKey = GSDefaultsKey<String>("Localize.storeCurrentKey")
     
     /// Get all available localization type from app
     ///
@@ -29,10 +34,6 @@ public struct Localize {
     public static func currentLanguage() -> String {
         if let current = GSDefaults.shared.get(for: storeCurrentKey) { return current }
         else { return defaultLanguage() }
-//        if let currentLanguage = UserDefaults.standard.object(forKey: LCLCurrentLanguageKey) as? String {
-//            return currentLanguage
-//        }
-//        return defaultLanguage()
     }
     
     /**
@@ -40,12 +41,11 @@ public struct Localize {
      - Parameter language: Desired language.
      */
     public static func setCurrentLanguage(_ language: String) {
-//        let selectedLanguage = availableLanguages().contains(language) ? language : defaultLanguage()
-//        if (selectedLanguage != currentLanguage()){
-//            UserDefaults.standard.set(selectedLanguage, forKey: LCLCurrentLanguageKey)
-//            UserDefaults.standard.synchronize()
-//            NotificationCenter.default.post(name: Notification.Name(rawValue: LCLLanguageChangeNotification), object: nil)
-//        }
+        let selectedLanguage = availableLanguages().contains(language) ? language : defaultLanguage()
+        if (selectedLanguage != currentLanguage()){
+            GSDefaults.shared.set(selectedLanguage, for: storeCurrentKey)
+            LocalizeNotifier.currentChanged.push(object: selectedLanguage)
+        }
     }
     
     /**

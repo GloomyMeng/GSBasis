@@ -14,7 +14,9 @@ public struct GSDefaultsKey<ValueType: Codable> {
     
     fileprivate let key: String
     
-    public init(_ key: String) { self.key = key }
+    public init(_ key: String) {
+        self.key = key
+    }
 }
 
 /// Provides strongly typed values associated with the lifetime of an application. Apropriate for user perferences
@@ -22,6 +24,8 @@ public struct GSDefaultsKey<ValueType: Codable> {
 ///     these should not be used to store sensitive information that could compromise
 ///     the application or the user's security and privacy
 public struct GSDefaults {
+    
+    public var allKeyNames = Set<String>.init()
     
     private var userDefaults: UserDefaults
     
@@ -77,8 +81,14 @@ public struct GSDefaults {
     ///   - value: the value to set
     ///   - key: the associated 'Key<ValueType>'
     public func set<ValueType>(_ value: ValueType, for key: GSDefaultsKey<ValueType>) {
+        guard !allKeyNames.contains(key.key) else {
+            Logger.error("This key '\(key)' is already exist in this UserDefault, please check now")
+            return
+        }
+        
         if isSwiftCodableType(ValueType.self) || isFoundationCodableType(ValueType.self) {
             userDefaults.set(value, forKey: key.key)
+            userDefaults.synchronize()
         } else {
             do {
                 userDefaults.set(try JSONEncoder.init().encode(value), forKey: key.key)
