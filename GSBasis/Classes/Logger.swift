@@ -27,12 +27,12 @@ public protocol Loggerable {
 public enum LogLevel: Int, Codable {
     case verbose, info, warning, error
     
-    public var textColor: UIColor {
+    public var textColor: GSColor {
         switch self {
-        case .verbose: return UIColor.lightGray
-        case .info: return UIColor.cyan
-        case .warning: return UIColor.yellow
-        case .error: return UIColor.red
+        case .verbose: return GSColor.lightGray
+        case .info: return GSColor.cyan
+        case .warning: return GSColor.yellow
+        case .error: return GSColor.red
         }
     }
     

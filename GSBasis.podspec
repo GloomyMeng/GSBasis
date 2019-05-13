@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 Basic components of the GS series components. Provide some rule and usefull function to other components 
                        DESC
 
-  s.homepage         = 'https://github.com/gloomy.meng.049@gmail.com/GSBasis'
+  s.homepage         = 'https://github.com/GloomyMeng/GSBasis'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gloomy.meng.049@gmail.com' => 'gloomy.meng.049@gmail.com' }
@@ -41,5 +41,6 @@ Basic components of the GS series components. Provide some rule and usefull func
   
   s.subspec 'UIKit' do |ss|
       ss.source_files = 'GSBasis/UIKit/**/*'
+      ss.dependency 'GSBasis/Common'
   end
 end
