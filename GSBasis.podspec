@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
   s.osx.deployment_target = '10.12'
   s.tvos.deployment_target = '10.0'
-  s.default_subspecs = 'Common', 'UIKit'
+  s.default_subspecs = 'Common'
   s.source_files = 'GSBasis/Classes/**/*'
   
   s.subspec 'Common' do |ss|
