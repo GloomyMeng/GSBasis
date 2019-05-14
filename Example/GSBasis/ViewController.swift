@@ -9,9 +9,6 @@
 import UIKit
 import GSBasis
 
-
-
-
 enum UserStatusNotifier: String, NotifierType {
     
     case login
@@ -39,7 +36,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let c = Localize.availableLanguages();
+//        let c = Localize.availableLanguages();
         
         UserStatusNotifier.login.addObserver(self, object: nil) { (controller, _) in
 

@@ -1,7 +1,9 @@
 use_frameworks!
 
 target 'GSBasis_Example' do
-  pod 'GSBasis', :path => '../'
+  pod 'GSBasis/Common', :path => '../'
+  pod 'GSBasis/FatModel', :path => '../'
+  pod 'GSBasis/UIKit', :path => '../'
 
   target 'GSBasis_Tests' do
     inherit! :search_paths
