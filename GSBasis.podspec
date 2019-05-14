@@ -25,7 +25,7 @@ Basic components of the GS series components. Provide some rule and usefull func
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gloomy.meng.049@gmail.com' => 'gloomy.meng.049@gmail.com' }
-  s.source           = { :git => 'https://github.com/gloomy.meng.049@gmail.com/GSBasis.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/GloomyMeng/GSBasis.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_version = '5.0'
   s.ios.deployment_target = '10.0'
@@ -42,5 +42,11 @@ Basic components of the GS series components. Provide some rule and usefull func
   s.subspec 'UIKit' do |ss|
       ss.source_files = 'GSBasis/UIKit/**/*'
       ss.dependency 'GSBasis/Common'
+      ss.dependency 'SnapKit'
+  end
+  
+  s.subspec 'FatModel' do |ss|
+      ss.source_files = 'GSBasis/FatModel/**/*'
+      ss.dependency 'GSBasis/UIKit'
   end
 end
