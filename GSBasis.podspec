@@ -32,7 +32,6 @@ Basic components of the GS series components. Provide some rule and usefull func
   s.osx.deployment_target = '10.12'
   s.tvos.deployment_target = '10.0'
   s.default_subspecs = 'Common'
-  s.source_files = 'GSBasis/Classes/**/*'
   
   s.subspec 'Common' do |ss|
       ss.source_files = 'GSBasis/Classes/**/*'
