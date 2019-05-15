@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GSBasis: 70182abf0aeba325b4e9f4b08f67fab4171a5fde
+  GSBasis: 8479d2750c21ef65ea878c0317e3192e848ccce3
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
