@@ -1,9 +1,9 @@
 PODS:
-  - GSBasis/Common (0.0.3):
+  - GSBasis/Common (0.1.0):
     - Then
-  - GSBasis/FatModel (0.0.3):
+  - GSBasis/FatModel (0.1.0):
     - GSBasis/UIKit
-  - GSBasis/UIKit (0.0.3):
+  - GSBasis/UIKit (0.1.0):
     - GSBasis/Common
     - SnapKit
   - SnapKit (5.0.0)
@@ -24,10 +24,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GSBasis: 97adb3a73f349a4db458cc357443729e61521429
+  GSBasis: 70182abf0aeba325b4e9f4b08f67fab4171a5fde
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
 PODFILE CHECKSUM: 7579bd1433bb65534aecccc71b84557d2da26c89
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.0.rc.1
