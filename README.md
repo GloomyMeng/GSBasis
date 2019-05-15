@@ -24,8 +24,8 @@ Unified error types and standard error handling.
 
 ## Features
 
-- [] Category, SPM installation
-- [] Logger store
+- [ ] Category, SPM installation
+- [ ] Logger store
 - [x] etc..
 
 ## Requirements
@@ -51,6 +51,7 @@ Hope can help everyone who likes and enjoys swift
 - [x] 'Logger' a canonical log output that supports simple log grading and supports Cocoapod module differentiation
 - [x] 'Notifier' use enum for define Notification.Name, and extension methods for monitor notification Simply
 - [x] 'Time' a way to streamline time calculations
+- [x] 'Async' a simple way to GCD
 - [x] 'Typealiases' alias ​​used by multiple platforms
 
 ### GSBasis/UIKit
