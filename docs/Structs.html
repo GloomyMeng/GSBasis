@@ -105,6 +105,12 @@
                 <a href="Extensions/Date.html">Date</a>
               </li>
               <li class="nav-group-task">
+                <a href="Extensions/DispatchQoS.html">DispatchQoS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/DispatchQoS/QoSClass.html">– QoSClass</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Extensions/Double.html">Double</a>
               </li>
               <li class="nav-group-task">
@@ -118,6 +124,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Extensions/UIControl.html">UIControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/qos_class_t.html">qos_class_t</a>
               </li>
             </ul>
           </li>
@@ -174,6 +183,15 @@
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Structs/Apply.html">Apply</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AsyncBlock.html">AsyncBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AsyncGroup.html">AsyncGroup</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/GSDefaults.html">GSDefaults</a>
               </li>
               <li class="nav-group-task">
@@ -193,6 +211,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:7GSBasis5Asynca">Async</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -203,6 +229,170 @@
 
           </section>
           <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Async%20%E2%80%93%20Struct"></a>
+                <a name="//apple_ref/swift/Section/Async – Struct" class="dashAnchor"></a>
+                <a href="#/Async%20%E2%80%93%20Struct">
+                  <h3 class="section-name">Async – Struct</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis10AsyncBlockV"></a>
+                    <a name="//apple_ref/swift/Struct/AsyncBlock" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis10AsyncBlockV">AsyncBlock</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Structs/AsyncBlock.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AsyncBlock</span><span class="o">&lt;</span><span class="kt">In</span><span class="p">,</span> <span class="kt">Out</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Apply%20-%20DSL%20for%20%60dispatch_apply%60"></a>
+                <a name="//apple_ref/swift/Section/Apply - DSL for `dispatch_apply`" class="dashAnchor"></a>
+                <a href="#/Apply%20-%20DSL%20for%20%60dispatch_apply%60">
+                  <h3 class="section-name">Apply - DSL for `dispatch_apply`</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis5ApplyV"></a>
+                    <a name="//apple_ref/swift/Struct/Apply" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis5ApplyV">Apply</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>Apply</code> is an empty struct with convenience static functions to parallelize a for-loop, as provided by <code>dispatch_apply</code>.
+Apply.background(100) { i in
+// Calls blocks in parallel
+}
+<code>Apply</code> runs a block multiple times, before returning. If you want run the block asynchronously from the current thread, wrap it in an <code><a href="Typealiases.html#/s:7GSBasis5Asynca">Async</a></code> block:
+Async.background {
+Apply.background(100) { i in
+// Calls blocks in parallel asynchronously
+}
+}</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    Grand Central Dispatch, dispatch_apply
+
+</div>
+
+                        <a href="Structs/Apply.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Apply</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/AsyncGroup%20%E2%80%93%20Struct"></a>
+                <a name="//apple_ref/swift/Section/AsyncGroup – Struct" class="dashAnchor"></a>
+                <a href="#/AsyncGroup%20%E2%80%93%20Struct">
+                  <h3 class="section-name">AsyncGroup – Struct</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSBasis10AsyncGroupV"></a>
+                    <a name="//apple_ref/swift/Struct/AsyncGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSBasis10AsyncGroupV">AsyncGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <strong>AsyncGroup</strong> struct facilitates working with groups of asynchronous blocks. Handles a internally <code>dispatch_group_t</code>.
+Multiple dispatch blocks with GCD:
+let group = AsyncGroup()
+group.background {
+// Run on background queue
+}
+group.utility {
+// Run on untility queue, after the previous block
+}
+group.wait()
+All moderns queue classes:
+group.main {}
+group.userInteractive {}
+group.userInitiated {}
+group.utility {}
+group.background {}
+Custom queues:
+let customQueue = dispatch_queue_create(<q>Label</q>, DISPATCH_QUEUE_CONCURRENT)
+group.customQueue(customQueue) {}
+Wait for group to finish:
+let group = AsyncGroup()
+group.background {
+// Do stuff
+}
+group.background {
+// Do other stuff in parallel
+}
+// Wait for both to finish
+group.wait()
+// Do rest of stuff</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    Grand Central Dispatch
+
+</div>
+
+                        <a href="Structs/AsyncGroup.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AsyncGroup</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <ul>
                 <li class="item">
@@ -401,7 +591,7 @@ the application or the user&rsquo;s security and privacy
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://gloomymeng.io/" target="_blank" rel="external">Gloomy.Meng</a>. All rights reserved. (Last updated: 2019-05-14)</p>
+          <p>&copy; 2019 <a class="link" href="https://gloomymeng.io/" target="_blank" rel="external">Gloomy.Meng</a>. All rights reserved. (Last updated: 2019-05-15)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
