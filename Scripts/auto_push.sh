@@ -39,7 +39,11 @@ else
   echo "\nGit Push Tag...."
   echo $(cd ${Module_Path}; git push origin ${Tag_Version})
 
-  #  4. Thunk to Cocoapods
+  #  4. Lint to Cocoapods
+  echo "\n Cocoapods lint..."
+  echo $(cd ${Module_Path}; pod lib lint ${Module_File})
+
+  #  5. Thunk to Cocoapods
   echo "\n Cocoapods Push..."
   echo $(cd ${Module_Path}; pod trunk push --verbose ${Module_File})
 

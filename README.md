@@ -6,11 +6,21 @@
 [![Platform](https://img.shields.io/cocoapods/p/GSBasis.svg?style=flat)](https://cocoapods.org/pods/GSBasis)
 
 
+- [Others](#other)
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+
+## Others
+
+### [GSNetwork](https://github.com/GloomyMeng/GSNetwork) 
+```
+A simple network components. simple and clear API usage.
+Support diverse data structure returns while guaranteeing type checking. 
+Unified error types and standard error handling.
+```
 
 ## Features
 
