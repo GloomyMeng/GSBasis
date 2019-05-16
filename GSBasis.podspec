@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GSBasis'
-  s.version          = '0.0.6'
+  s.version          = '1.0.0'
   s.summary          = 'Basic components of the GS series components'
 
 # This description is used to generate tags and improve search results.
